@@ -5,7 +5,7 @@
 # xcode-select --install
 
 # install homebrew
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install my dotfiles
 cd "${HOME}" && git clone https://github.com/githubutilities/dotfiles.git && cd dotfiles && git checkout osx && source bootstrap.sh
