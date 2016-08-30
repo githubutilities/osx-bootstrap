@@ -11,4 +11,4 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install caskroom/cask/brew-cask
 
 # install my dotfiles
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/githubutilities/dotfiles-bootstrap/master/bootstrap.sh)"
+cd "${HOME}" && git clone https://github.com/githubutilities/dotfiles.git && cd dotfiles && git checkout osx && source bootstrap.sh
